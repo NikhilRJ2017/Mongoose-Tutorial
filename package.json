@@ -1,0 +1,15 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "Mongoose Tutorial",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Jadhav",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.4.2"
+  }
+}

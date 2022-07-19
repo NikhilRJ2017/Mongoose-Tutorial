@@ -8,7 +8,7 @@ const addressSchema = new mongoose.Schema({
 //* all the validator function works with only save() or create() methods, 
 //* other methods such as findAll etc won't work on validations they directly work on database,
 //* so for eg, if you try to update the age using findByIdAndUpdate() to -19, it will work and will not throw 
-//* any error, so use findById().save() instead or findOne().save()
+//* any error, so use findById().save() instead or findOne().save() OR use options such as "runValidators: true" with such functions
 //* The save() function is generally the right way to update a document with Mongoose. With save(), you get full validation and middleware.
 //* Note that update(), updateMany(), findOneAndUpdate(), etc. do not execute save() middleware. 
 //* If you need save middleware and full validation, first query for the document and then save() it.
